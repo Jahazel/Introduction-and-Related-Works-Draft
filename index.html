@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Powered Document Reader for Low-Vision Users</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Powered Document Reader for Low-Vision Users</h1>
+
+      <section>
+        <h2>Goal</h2>
+        <p>
+          Create a WebApp to help Low-Vision Individuals Understand Images
+          Better.
+        </p>
+      </section>
+
+      <section>
+        <h2>Software and Libraries</h2>
+        <ul>
+          <li>
+            OCR software:
+            <a href="https://github.com/tesseract-ocr/tesseract"
+              >Tesseract OCR</a
+            >
+          </li>
+          <li>
+            Image-to-text:
+            <a href="https://huggingface.co/tasks/image-to-text"
+              >HuggingFace Image-to-Text</a
+            >
+          </li>
+          <li>
+            Web app library: <a href="https://www.gradio.app/">Gradio</a> or
+            <a href="https://streamlit.io/">Streamlit</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>We talk about technology accessibility.</p>
+        <p>
+          The goal of this project is to create a web application designed to
+          make digital media more accessible for low vision users. Unlike
+          countless other text-to-speech applications, ours will have a more
+          holistic approach by also describing the layout and images within the
+          user-inputted document. Furthermore, unlike other text-to-speech
+          tools, this application will be designed specifically for low vision
+          users, so there will be a greater emphasis on an accessible interface.
+        </p>
+        <p>
+          The project plans to use either Gradio or Streamlit to support the web
+          application and its interface. For the text-to-speech aspect of the
+          project, we will be using Tesseract OCR. For the image or
+          layout-to-text segmentation, we will be implementing the HuggingFace
+          Image-To-Text open-source software by using the Transformers API.
+        </p>
+        <p>
+          The web application will be designed in such a way that the low vision
+          user can import a document of any supported format, such as PDF or
+          JPEG. After the import is complete, the document will go through
+          Tesseract OCR, which will extract the line-by-line text from the
+          input. If the document also has images, the application will make
+          calls to the HuggingFace Image-To-Text software via the Transformers
+          API. After these processes are complete, the app will output a speech
+          representation of the document.
+        </p>
+        <p>
+          A challenge will be to segment the document’s layout and include this
+          description in the output. Another challenge will be creating a web
+          interface that is accessible to low vision users. Throughout this
+          design, we will have to be thoughtful of the users’ needs as the
+          developers are not low vision individuals.
+        </p>
+      </section>
+
+      <section>
+        <h2>Related Works</h2>
+        <div class="entry">
+          <h3>ImageAssist</h3>
+          <p>
+            A related work that was done by Professor Brian A. Smith is called
+            ImageAssist. In ImageAssist, a set of three tools within a digital
+            software are intended to help users understand and explore images.
+            This aligns with our work because it gives us a better understanding
+            of the creative ways researchers are using online software to make
+            technology more accessible for the populations that our project is
+            focused on.
+          </p>
+        </div>
+        <div class="entry">
+          <h3>Automated Video Description for Blind and Low Vision Users</h3>
+          <p>
+            Another related work that we found similar is Automated Video
+            Description for Blind and Low Vision Users. A team of researchers
+            created a system that consists of two main parts: 1) an artificial
+            intelligence (AI)-based tool, called NarrationBot, that generates
+            inline or extended baseline descriptions focusing on describing
+            scenes in the video; and 2) an AI-based tool, called InfoBot, that
+            delivers extended on-demand descriptions by pausing the video and
+            providing additional information as dictated by a viewer’s queries.
+            This aligns with our research because it provides us with deeper
+            information on how to use LLMs or AI in engaging with the
+            communities of low-vision individuals.
+          </p>
+        </div>
+        <div class="entry">
+          <h3>OCR and Text Recognition for the Visually Impaired</h3>
+          <p>
+            The major problem faced by visually impaired people these days is
+            that they are unable to do text recognition on their own, which
+            forces them to depend on others for their day-to-day activities such
+            as reading newspapers, letters sent through post, referring books,
+            etc. Vijayanarayanan et al. suggest using OCR, which can provide
+            highly accurate text recognition. Processing of OCR information is
+            fast, and large quantities of text can be input quickly. Our
+            proposed project can efficiently rely on OCR technology for
+            development, ensuring quality output while also managing resource
+            constraints.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

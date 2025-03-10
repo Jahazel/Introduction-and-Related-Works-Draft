@@ -10,11 +10,180 @@
     <div class="container">
       <h1 id="top">AI-Powered Document Reader for Low-Vision Users</h1>
       <h2>Team Members</h2>
-      <ul>
+      <ul class="team">
         <li>
           Jahazel Sanchez, Verrels Lukman Eugeneo, Asya Lyubavina, Jerry Onyango
         </li>
       </ul>
+
+      <h2>Outline</h2>
+      <div class="outline">
+        <ul>
+          <li>
+            <strong>Abstract</strong>
+            <ul>
+              <li>
+                <strong>Overview:</strong> Developing an accessible AI-powered
+                web application for low-vision users.
+              </li>
+              <li>
+                <strong>Context:</strong> 2.2 billion people globally with
+                vision impairments face digital barriers.
+              </li>
+              <li>
+                <strong>Problem Statement:</strong> Existing text-to-speech
+                tools lack visual integration.
+              </li>
+              <li>
+                <strong>Solution:</strong> Combining OCR and transformer-based
+                image captioning.
+              </li>
+              <li>
+                <strong>Expected Impact:</strong> Independent access to
+                comprehensive digital content.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Introduction</strong>
+            <ul>
+              <li>
+                Importance and challenges of visual information for low-vision
+                users.
+              </li>
+              <li>Limitations of current accessibility tools.</li>
+              <li>
+                Project objective: Developing an AI-driven web application.
+              </li>
+              <li>
+                <strong>Technologies:</strong>
+                <ul>
+                  <li>Tesseract OCR</li>
+                  <li>HuggingFace transformers (BLIP, VisionEncoderDecoder)</li>
+                  <li>Gradio or Streamlit</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Technical Challenges:</strong>
+                <ul>
+                  <li>Document layout segmentation.</li>
+                  <li>Contextual accuracy in AI-generated descriptions.</li>
+                  <li>
+                    User Interface (UI) intuitiveness for visually impaired.
+                  </li>
+                </ul>
+              </li>
+              <li>User-centered iterative feedback design.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Related Work</strong>
+            <ul>
+              <li>
+                <strong>Existing Assistive Technologies:</strong>
+                <ul>
+                  <li>Smith et al. (2021) – ImageAssist (isolated images).</li>
+                  <li>
+                    Vijayanarayanan et al. (2023) – OCR & Text-to-Speech (no
+                    image integration).
+                  </li>
+                  <li>
+                    Bodi et al. (2021) – NarrationBot & InfoBot (video
+                    descriptions).
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Our Differentiation:</strong>
+                <ul>
+                  <li>Integrated text-image accessibility.</li>
+                  <li>Web-based solution without hardware dependency.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Technical Implementation</strong>
+            <ul>
+              <li>
+                <strong>Optical Character Recognition (OCR)</strong>
+                <ul>
+                  <li>Tool: Tesseract OCR.</li>
+                  <li>
+                    Challenges: Handwriting, diverse layouts, multilingual
+                    accuracy.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>AI-Powered Image Captioning</strong>
+                <ul>
+                  <li>
+                    Models: HuggingFace transformers (BLIP,
+                    VisionEncoderDecoder).
+                  </li>
+                  <li>
+                    Capabilities: Contextual image descriptions, coherence.
+                  </li>
+                  <li>
+                    Challenges: Complex visual accuracy, irrelevant outputs.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Web-Based UI for Accessibility</strong>
+                <ul>
+                  <li>Frameworks: Gradio / Streamlit.</li>
+                  <li>
+                    Features: Text-to-speech, customizable UI (font, contrast,
+                    voice).
+                  </li>
+                  <li>
+                    Challenges: Accessibility considerations, simplicity vs.
+                    functionality balance.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Ethical Considerations</strong>
+            <ul>
+              <li>
+                <strong>Should We Do This?</strong> AI for accessibility is
+                beneficial; awareness of biases.
+              </li>
+              <li>
+                <strong>Model Errors & Appeals:</strong> Strategies for error
+                handling, iterative user feedback.
+              </li>
+              <li>
+                <strong>Auditing:</strong> Regular AI performance evaluation for
+                user equity.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Impact & Potential Challenges</strong>
+            <ul>
+              <li>
+                <strong>Error Rates for Different Users:</strong> Variability in
+                accuracy due to text styles, complex visuals.
+              </li>
+              <li>
+                <strong>Future Steps:</strong> Addressing limitations through
+                iterative feedback and continuous improvement.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
       <h2>Abstract</h2>
       <p>
         The goal of this project is to develop an accessible AI-powered web

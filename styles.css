@@ -56,18 +56,61 @@ p {
   font-size: 16px;
 }
 
-ul {
+.team ul {
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: center;
 }
 
-ul li {
+.team ul li {
   background: #f1f1f1;
   margin: 5px 0;
   padding: 10px;
   border-radius: 5px;
+}
+
+.outline {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.outline ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.outline > ul > li {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.outline > ul > li > ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.outline li::before {
+  content: "•";
+  color: #007bff;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.outline ul ul li::before {
+  content: "◦";
+  color: #6c757d;
+}
+
+.outline strong {
+  color: #343a40;
+}
+
+.outline ul ul ul {
+  margin-top: 4px;
+  padding-left: 20px;
 }
 
 section {
